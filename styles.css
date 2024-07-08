@@ -1,0 +1,136 @@
+h1{
+    background-color:lightslategray;
+    border-radius: 25px;
+    width: 260px;
+    text-align: center;
+    color: azure;
+}
+body{
+    background-color:lightcoral;
+}
+#face{
+    border: 3px solid black;
+    height: 150px;
+    width: 150px;
+    background-color: lightblue;
+    border-radius: 150px 150px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#eye-container{
+    position: absolute;
+    /*border: 1px solid black;*/
+    width: 100px;
+    height: 50px;
+    top: 130px;
+    left: 550px;
+}
+#left-eye, #right-eye{
+    position: absolute;
+    border: 3px solid black;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    right: 10px;
+}
+#right-eye{
+    left: 135px;
+    transition: transform 0.5s ease-in-out;
+}
+#left-eye::before,#right-eye::before{
+    content: "";
+    position: absolute;
+    border:1px solid white;
+    width: 20px;
+    height: 20px;
+    background-color:black;
+    border-radius: 50%;
+    top: 35px;
+    left: 35px;
+}
+#left-eye{
+    transition: transform 0.5s ease-in-out;
+}
+
+#body{
+    border: 3px solid black;
+    height: 150px;
+    width: 200px;
+    background-color: pink;
+    border-radius: 0 0 150px 150px ;
+    right: 200px;
+}
+#arm-container{
+    position: absolute;
+    /*border: 1px solid black;*/
+    width: 500px;
+    height: 150px;
+    top: 240px;
+    left: 439px;
+}
+#left-arm, #right-arm{
+    position: absolute;
+    border: 3px solid black;
+    width: 30px;
+    height: 120px;
+    overflow: hidden;
+    background-color: palevioletred;
+    border-radius: 40px 40px 40px 40px;
+    left: 304px;
+}
+#right-arm{
+    left: 107px;
+    transition: transform 0.2s ease-in-out;
+}
+#left-arm{
+    transition: transform 0.2s ease-in-out;
+}
+#leg-container{
+    position: absolute;
+    /*border: 1px solid black;*/
+    width: 500px;
+    height: 150px;
+    top: 375px;
+    left: 545px;
+}
+#left-leg, #right-leg{
+    position: absolute;
+    border: 3px solid black;
+    width: 30px;
+    height: 120px;
+    overflow: hidden;
+    background-color: palevioletred;
+    border-radius: 40px 40px 40px 40px;
+    left: 40px;
+}
+#right-leg{
+    left: 157px;
+    transition: transform 0.5s ease-in-out;
+}
+#left-leg{
+    transition: transform 0.5s ease-in-out;
+    
+}
+#right-arm:hover{
+    transform: rotate(90deg);
+}
+#left-arm:hover{
+    transform: rotate(90deg);
+}
+#left-leg:hover{
+    transform: rotate(90deg);
+}
+#right-leg:hover{
+    transform: rotate(90deg);
+}
+#right-eye:hover{
+    transform: rotate(360deg);
+}
+#left-eye:hover{
+    transform: rotate(360deg);
+}
+
+
+
